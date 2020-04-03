@@ -1,0 +1,17 @@
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.AssemblyInfoInputs.cache
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.AssemblyInfo.cs
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\WebApplication2.deps.json
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\WebApplication2.runtimeconfig.json
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\WebApplication2.runtimeconfig.dev.json
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\WebApplication2.dll
+C:\wamp64\www\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.1\WebApplication2.pdb
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.csprojAssemblyReference.cache
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.RazorAssemblyInfo.cache
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.RazorAssemblyInfo.cs
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.dll
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.pdb
+C:\wamp64\www\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.genruntimeconfig.cache
