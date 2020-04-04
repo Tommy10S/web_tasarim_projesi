@@ -4,12 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>HELLOO</title>
 
     <style>
 
 
-
+        .mySlides {
+            display: none;
+        }
         div {
             width: 100%;
             height: 300px;
@@ -21,80 +24,61 @@
             font-family: 'Lucida Handwriting';
             background-color: cornflowerblue;
             background-size: 100% 300px;
+            height: 745px;
+            
+
+        }
+        .formiçin{
+            margin-left:100px;
+        }
+      
+
+        @media screen and (max-width:990px) {
+
+            #enalttakikısım {
+                margin-top: 70px;
+            }
+            .w3-content{
+               width:70%;
+               
+            }
+            .formiçin{
+
+            }
+            .buttons{
+                margin-top:30px;
+                float:left;
+            }
+                #enalttakikısım img {
+                    margin-top: 80px;
+                }
+        }
+
+        .formiçin {
+            width: 100%;
+            float:left;
+
            
         }
-
-        .div1yazi {
-            font-size: 20px;
-            text-shadow: 0px 0px 1px red;
+        .w3-content{
+            float:left;
+            margin-left:100px;
+                 
+            
+        }
+        button {
+            background-color: cadetblue;
+            font-family: 'Monotype Corsiva';
+            font-weight: bold;
+            font-size:large;
         }
 
-        .görüntülerimiz {
-            float: left;
-            width: 100%;
+        form {
+            font-weight: bold;
+            font-size: small;
+            float:left;
+            
         }
-
-        .görüntülerimiz1 {
-            width: 33.33%;
-            float: left;
-        }
-
-            .görüntülerimiz1:nth-child(1) {
-                background-image: url("yenicalısma.jpg");
-            }
-
-            .görüntülerimiz1:nth-child(2) {
-                background-image: url("kodfoto2.jpg");
-            }
-
-            .görüntülerimiz1:nth-child(3) {
-                background-image: url("kodfoto5.jpg");
-            }
-                
-        #enalttakikısım {
-            clear: both;
-            background-color: aqua;
-            height: 330px;
-            color: black;
-        }
-
-            #enalttakikısım img {
-                border: 5px groove;
-                border-color: darkblue;
-                margin-top: 20px;
-            }
-
-            #enalttakikısım p {
-                white-space: pre-line;
-                text-transform: capitalize;
-                font-size: 16px;
-                margin: auto;
-            }
-            @media screen and (max-width:992px){
-                .görüntülerimiz1{
-                    width:100%;
-                }
-                #enalttakikısım{
-                    margin-top:900px;
-                }
-                #enalttakikısım img{
-                    margin-top:80px;
-                }
-            }
-        .formiçin {
-            width: 33.33%;
-            float: left;
-        }
-       button{
-           background-color:cadetblue;
-           font-family:'Monotype Corsiva';
-           font-weight:bold;
-           font-size:large;
-       }
-       form{
-           font-weight:bold;
-           font-size:large;
-       }
         
     </style>
 </head>
@@ -124,23 +108,24 @@
 
 
             ?>
+            <div class="buttons">
 
+                <button onclick="window.location.href='htmlpage1.html'">HAKKIMDA</button>         
+                <button onclick="window.location.href='htmlpage2.html'">ÖZGEÇMİŞİM</button>
+                <button onclick="window.location.href='htmlpage3.html'">TAKIMIMIZ</button>
+                <button onclick="window.location.href='htmlpage4.html'">ŞEHRİM</button>
+            </div>
         </div>
-      
-       <div>
 
-           <button onclick="window.location.href='htmlpage1.html'">HAKKIMDA</button>
-           <button onclick="window.location.href='htmlpage2.html'">ÖZGEÇMİŞİM</button>
-           <button onclick="window.location.href='htmlpage3.html'">TAKIMIMIZ</button>
-           <button onclick="window.location.href='htmlpage4.html'">ŞEHRİM</button>
-       </div>
+            <div class="w3-content w3-section" style="max-width:450px">
+                <img class="mySlides" src="kodfoto5.jpg" style="width:100%" height="300">
+                <img class="mySlides" src="kodfoto6.jpg" style="width:100%" height="300">
+                <img class="mySlides" src="kodfoto2.jpg" style="width:100%" height="300">
+            </div>
 
-    </div>
-    <div class="görüntülerimiz">
-        <div class="görüntülerimiz1"> </div>
-        <div class="görüntülerimiz1"> </div>
-        <div class="görüntülerimiz1"> </div>
-    </div>
+        
+
+       
     
         <div id="enalttakikısım">
             <img src="SAKARYAÜNİ.jpg">
@@ -151,7 +136,29 @@
         </div>
 
 
-   
+
+    </div>
+
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
 
 </body>
 </html>
