@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+ <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>İLETİŞİM SAYFASI</title>
+    <style>
+
+        body {
+            background-color: aqua;
+        }
+
+        div {
+            width: 100%;
+            height: 300px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .üstdiv {
+            width: 100%;
+            float: left;
+        }
+
+        .üstdiv1 {
+            text-align: center;
+            width: 50%;
+            float: left;
+        }
+
+        .alttakidiv {
+            width: 100%;
+            float: left;
+        }
+        form{
+            text-align:left;
+            font-weight:bold;
+        }
+        .alttakidiv1 {
+            text-align: center;
+            width: 50%;
+            float: left;
+        }
+
+        @media screen and (max-width:990px) {
+            .üstdiv {
+                width: 100%;
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="üstdiv">
+        <div class="üstdiv1">
+            <h1>İLETİŞİM</h1>
+
+            <form action="htmlpage6.html" method="post">
+                adınız: <input type="text" name="adi" id="adi" style="margin-left:33px" />
+                <br />
+                soyadınız:  <input type="text" name="soyadi" id="soyadi" style="margin-left: 11px" />
+                <br />
+                e posta:  <input type="text" name="eposta" id="eposta" style="margin-left: 27.5px" />
+                <br /><br />
+                cinsiyetiniz: <input type="radio" name="cinsiyet" value="erkek" checked />erkek
+                <input type="radio" name="cinsiyet" value="kadin" />kadın <br />
+
+                ilteişim nedeninizi yazınız:
+                <select name="letisimnedeni">
+                    <option value="soru">Bazı sorularım var </option>
+                    <option value="site">Site ile alakalı   </option>
+
+                </select>
+                <br /><br />
+
+                <input type="submit" value="Gönder" style="margin-left:50px" />
+                <input type="reset" value="Temizle" style="margin-left:30px" />
+            </form>
+            <?php
+
+            if ($_POST){
+            $adi=$_POST['adi'];
+            $soyadi=$_POST['soyadi'];
+            $eposta=$_POST['eposta'];
+            if($kullanıcıadi==""||$şifre==""||$eposta==""){
+            echo "boş alan bırakmayınız";}
+            
+
+
+
+            ?>
+
+
+        </div>
+        <div class="üstdiv1">
+           
+        </div>
+    </div>
+    <div class="alttakidiv">
+        <div class="alttakidiv1">
+          
+        </div>
+        <div class="alttakidiv1">
+          
+        </div>
+    </div>
+</body>
+</html>
